@@ -6,12 +6,12 @@ import HeroStudentsCard from "./HeroStudentsCard";
 
 export const HeroVisual: React.FC = () => {
   return (
-    <div className="relative w-full max-w-7xl mx-auto h-[400px] sm:h-[500px] md:h-[600px] lg:h-[680px] xl:h-[750px] flex justify-center items-end overflow-hidden z-10 shrink-0 mt-1 md:mt-2">
+    <div className="relative w-full max-w-7xl mx-auto h-[400px] sm:h-[500px] md:h-[600px] lg:h-[680px] xl:h-[750px] flex justify-center items-end overflow-hidden z-10 shrink-0 -mt-10 sm:-mt-16 md:-mt-28 lg:-mt-45 xl:-mt-52">
       {/* Lime Background Circular Shape (Fluid Responsive Aspect Square Dome) */}
       <div className="absolute left-1/2 -translate-x-1/2 bottom-[-52%] sm:bottom-[-55%] md:bottom-[-78%] lg:bottom-[-105%] w-[88%] sm:w-[78%] md:w-[72%] lg:w-[95%] max-w-7xl aspect-square rounded-full bg-[#CBFC01] z-0 pointer-events-none shrink-0" />
 
       {/* Student / Laptop Image Wrapper */}
-      <div className="relative z-10 w-[85%] sm:w-[70%] md:w-[58%] lg:w-[50%] xl:w-[76%] max-w-4xl h-full flex items-end justify-center pointer-events-none">
+      <div className="relative z-10 w-[85%] sm:w-[70%] md:w-[58%] lg:w-[50%] xl:w-[100%] max-w-7xl h-full flex items-end justify-center pointer-events-none">
         <Image
           src="/images/hero/hero-student.png"
           alt="Student learning with laptop"

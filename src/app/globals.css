@@ -150,7 +150,7 @@
 
 .hero-grid-pattern {
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.2) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 2px, transparent 2px);
   background-size: 120px 120px;
 }
