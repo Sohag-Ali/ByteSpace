@@ -1,0 +1,21 @@
+<svg width="600" height="380" viewBox="0 0 600 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="380" fill="#172554"/>
+  <!-- Startup Rocket Launch Illustration -->
+  <path d="M300 60C300 60 360 120 360 220H240C240 120 300 60 300 60Z" fill="#3B82F6"/>
+  <circle cx="300" cy="140" r="20" fill="#93C5FD"/>
+  <path d="M240 220L190 270H250L240 220Z" fill="#1D4ED8"/>
+  <path d="M360 220L410 270H350L360 220Z" fill="#1D4ED8"/>
+  
+  <!-- Rocket Exhaust Flames -->
+  <path d="M270 220C270 220 280 290 300 320C320 290 330 220 330 220H270Z" fill="#F59E0B"/>
+  <path d="M280 220C280 220 290 270 300 290C310 270 320 220 320 220H280Z" fill="#EF4444"/>
+
+  <!-- Lightbulb Idea Circle -->
+  <circle cx="150" cy="120" r="40" fill="#F59E0B" fill-opacity="0.9"/>
+  <path d="M150 95C136 95 125 106 125 120C125 130 131 138 140 142V150H160V142C169 138 175 130 175 120C175 106 164 95 150 95Z" fill="#FFFFFF"/>
+
+  <!-- Target & Arrow -->
+  <circle cx="450" cy="120" r="40" fill="#10B981" fill-opacity="0.9"/>
+  <circle cx="450" cy="120" r="25" stroke="#FFFFFF" stroke-width="4" fill="none"/>
+  <circle cx="450" cy="120" r="10" fill="#FFFFFF"/>
+</svg>
