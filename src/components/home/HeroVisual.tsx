@@ -6,30 +6,30 @@ import HeroStudentsCard from "./HeroStudentsCard";
 
 export const HeroVisual: React.FC = () => {
   return (
-    <div className="relative w-full max-w-[1280px] mx-auto h-[480px] sm:h-[550px] md:h-[620px] lg:h-[660px] mt-2 flex justify-center items-end overflow-hidden z-10">
-      {/* Lime Background Circular Shape */}
-      <div className="absolute bottom-[-240px] sm:bottom-[-320px] md:bottom-[-400px] lg:bottom-[-440px] left-1/2 -translate-x-1/2 w-[600px] sm:w-[750px] md:w-[920px] lg:w-[1020px] h-[600px] sm:h-[750px] md:h-[920px] lg:h-[1020px] rounded-full bg-[#CBFC01] z-0 pointer-events-none shrink-0" />
+    <div className="relative w-full max-w-7xl mx-auto h-[400px] sm:h-[500px] md:h-[600px] lg:h-[680px] xl:h-[750px] flex justify-center items-end overflow-hidden z-10 shrink-0 mt-1 md:mt-2">
+      {/* Lime Background Circular Shape (Fluid Responsive Aspect Square Dome) */}
+      <div className="absolute left-1/2 -translate-x-1/2 bottom-[-52%] sm:bottom-[-55%] md:bottom-[-78%] lg:bottom-[-105%] w-[88%] sm:w-[78%] md:w-[72%] lg:w-[95%] max-w-7xl aspect-square rounded-full bg-[#CBFC01] z-0 pointer-events-none shrink-0" />
 
-      {/* Student / Laptop Image */}
-      <div className="relative z-10 w-full max-w-[500px] sm:max-w-[620px] md:max-w-[720px] lg:max-w-[820px] h-full flex items-end justify-center">
+      {/* Student / Laptop Image Wrapper */}
+      <div className="relative z-10 w-[85%] sm:w-[70%] md:w-[58%] lg:w-[50%] xl:w-[76%] max-w-4xl h-full flex items-end justify-center pointer-events-none">
         <Image
           src="/images/hero/hero-student.png"
           alt="Student learning with laptop"
-          width={820}
-          height={660}
+          width={1020}
+          height={860}
           priority
-          className="object-contain max-h-[460px] sm:max-h-[540px] md:max-h-[600px] lg:max-h-[640px] w-auto drop-shadow-lg"
+          className="object-contain max-h-[380px] sm:max-h-[470px] md:max-h-[570px] lg:max-h-[750px] xl:max-h-[850px] w-auto drop-shadow-xl select-none"
         />
       </div>
 
-      {/* Floating Card 1: UI/UX Design (Top Left) */}
-      <HeroCourseCard className="absolute left-[3%] sm:left-[8%] md:left-[14%] lg:left-[19%] top-[12%] sm:top-[16%] md:top-[18%] z-20 shadow-xl" />
+      {/* Floating Card 1: UI/UX Design (Top Left of Student) */}
+      <HeroCourseCard className="absolute left-[2%] sm:left-[5%] md:left-[10%] lg:left-[16%] xl:left-[20%] top-[20%] sm:top-[22%] md:top-[25%] lg:top-[52%] z-20 shadow-xl scale-85 sm:scale-95 lg:scale-100 origin-left" />
 
-      {/* Floating Card 2: Learning Progress (Top Right) */}
-      <HeroProgressCard className="absolute right-[3%] sm:right-[8%] md:right-[14%] lg:right-[19%] top-[20%] sm:top-[24%] md:top-[26%] z-20 shadow-xl" />
+      {/* Floating Card 2: Learning Progress (Top Right of Student) */}
+      <HeroProgressCard className="absolute right-[2%] sm:right-[5%] md:right-[10%] lg:right-[16%] xl:right-[25%] top-[25%] sm:top-[28%] md:top-[30%] lg:top-[50%] z-20 shadow-xl scale-85 sm:scale-95 lg:scale-120 origin-right" />
 
-      {/* Floating Card 3: Happy Students (Bottom Left) */}
-      <HeroStudentsCard className="absolute left-[4%] sm:left-[9%] md:left-[15%] lg:left-[21%] bottom-[10%] sm:bottom-[14%] md:bottom-[16%] z-20 shadow-xl" />
+      {/* Floating Card 3: Happy Students (Bottom Left of Student) */}
+      <HeroStudentsCard className="absolute left-[2%] sm:left-[5%] md:left-[11%] lg:left-[17%] xl:left-[21%] bottom-[6%] sm:bottom-[8%] md:bottom-[10%] lg:bottom-[6%] z-20 shadow-xl scale-85 sm:scale-95 lg:scale-100 origin-left" />
     </div>
   );
 };
