@@ -1,6 +1,7 @@
 import Hero from "@/components/home/Hero";
 import TrustedLogos from "@/components/home/TrustedLogos";
 import CourseSection from "@/components/home/CourseSection";
+import LearningPaths from "@/components/home/LearningPaths";
 
 export default function Home() {
   return (
@@ -8,6 +9,8 @@ export default function Home() {
       <Hero />
       <TrustedLogos />
       <CourseSection />
+      <LearningPaths />
     </main>
   );
 }
+
