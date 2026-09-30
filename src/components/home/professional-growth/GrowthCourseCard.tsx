@@ -8,12 +8,14 @@ interface GrowthCourseCardProps {
   className?: string;
 }
 
-export const GrowthCourseCard: React.FC<GrowthCourseCardProps> = ({ className }) => {
+export const GrowthCourseCard: React.FC<GrowthCourseCardProps> = ({
+  className,
+}) => {
   return (
     <div
       className={cn(
         "bg-white rounded-[28px] sm:rounded-[36px] p-4 sm:p-5 md:p-6 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.14)] border border-gray-100/80 max-w-[340px] sm:max-w-[430px] md:max-w-[480px] w-full flex flex-col gap-4 select-none transition-all duration-300",
-        className
+        className,
       )}
     >
       <div className="relative w-full h-[155px] sm:h-[190px] md:h-[215px] rounded-2xl overflow-hidden bg-gray-100 shadow-inner">
@@ -37,7 +39,8 @@ export const GrowthCourseCard: React.FC<GrowthCourseCardProps> = ({ className })
           Learn Figma from Basic
         </h4>
         <p className="font-satoshi text-xs sm:text-sm text-gray-500">
-          by <span className="font-semibold text-[#003BE2]">purepearl studio</span>
+          by{" "}
+          <span className="font-semibold text-[#003BE2]">purepearl studio</span>
         </p>
       </div>
       <div className="flex items-center justify-between pt-3 border-t border-gray-100">
@@ -45,7 +48,10 @@ export const GrowthCourseCard: React.FC<GrowthCourseCardProps> = ({ className })
           Beginner
         </span>
         <span className="font-poppins font-bold text-base sm:text-lg md:text-xl text-[#003BE2]">
-          $25<span className="text-xs text-gray-400 font-normal ml-1">/lifetime</span>
+          $25
+          <span className="text-xs text-gray-400 font-normal ml-1">
+            /lifetime
+          </span>
         </span>
       </div>
     </div>

@@ -10,7 +10,9 @@ interface CourseDetailsHeroProps {
   course: Course;
 }
 
-export const CourseDetailsHero: React.FC<CourseDetailsHeroProps> = ({ course }) => {
+export const CourseDetailsHero: React.FC<CourseDetailsHeroProps> = ({
+  course,
+}) => {
   const [copied, setCopied] = useState(false);
 
   const handleShare = async () => {
@@ -62,7 +64,10 @@ export const CourseDetailsHero: React.FC<CourseDetailsHeroProps> = ({ course }) 
               Unlock the Power of Digital Creation with Expert Guidance
             </p>
             <p className="font-satoshi text-sm text-white/80 mt-0.5">
-              by <span className="font-semibold text-[#CBFC01]">{course.instructor}</span>
+              by{" "}
+              <span className="font-semibold text-[#CBFC01]">
+                {course.instructor}
+              </span>
             </p>
 
             {/* Information Pills */}

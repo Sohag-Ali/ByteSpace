@@ -7,7 +7,9 @@ interface HeroStudentsCardProps {
   className?: string;
 }
 
-export const HeroStudentsCard: React.FC<HeroStudentsCardProps> = ({ className }) => {
+export const HeroStudentsCard: React.FC<HeroStudentsCardProps> = ({
+  className,
+}) => {
   const avatars = [
     "/images/hero/avatar1.svg",
     "/images/hero/avatar2.svg",
@@ -20,7 +22,7 @@ export const HeroStudentsCard: React.FC<HeroStudentsCardProps> = ({ className })
     <div
       className={cn(
         "bg-white rounded-2xl md:rounded-[18px] p-3.5 md:p-4 shadow-xl md:shadow-2xl flex flex-col border border-gray-100/50 backdrop-blur-sm min-w-[190px] md:min-w-[210px]",
-        className
+        className,
       )}
     >
       <h4 className="text-gray-900 font-satoshi  text-xs md:text-sm leading-tight">

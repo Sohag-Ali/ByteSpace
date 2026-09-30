@@ -11,7 +11,6 @@ export const CreatorProfileHero: React.FC = () => {
   return (
     <div className="relative w-full bg-[#003BE2] hero-grid-pattern pt-8 sm:pt-12 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 text-white select-none">
       <div className="max-w-7xl mx-auto flex flex-col justify-between gap-8">
-        
         {/* Top & Description Block */}
         <div className="flex flex-col gap-6 max-w-4xl">
           {/* Profile Header Row */}
@@ -68,10 +67,15 @@ export const CreatorProfileHero: React.FC = () => {
             className="space-y-3 font-satoshi text-sm sm:text-base text-white/85 leading-relaxed"
           >
             <p>
-              Welcome to the creative world of Md Sohag Ali. Here, you&apos;ll discover the passion, expertise, and inspiration that drive my creative journey. Let&apos;s explore and learn together!
+              Welcome to the creative world of Md Sohag Ali. Here, you&apos;ll
+              discover the passion, expertise, and inspiration that drive my
+              creative journey. Let&apos;s explore and learn together!
             </p>
             <p>
-              I dive into my creative portfolio, showcasing a glimpse of my artistic endeavors. From digital designs to multimedia projects, each piece tells a unique story. Explore the world of creativity with me.
+              I dive into my creative portfolio, showcasing a glimpse of my
+              artistic endeavors. From digital designs to multimedia projects,
+              each piece tells a unique story. Explore the world of creativity
+              with me.
             </p>
           </motion.div>
         </div>
@@ -136,7 +140,6 @@ export const CreatorProfileHero: React.FC = () => {
             </motion.button>
           </motion.div>
         </div>
-
       </div>
     </div>
   );

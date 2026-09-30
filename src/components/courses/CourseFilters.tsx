@@ -1,7 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { SlidersHorizontal, BarChart2, Grid, ArrowUpDown, ChevronDown } from "lucide-react";
+import {
+  SlidersHorizontal,
+  BarChart2,
+  Grid,
+  ArrowUpDown,
+  ChevronDown,
+} from "lucide-react";
 import { CATEGORIES } from "@/data/courses";
 
 interface CourseFiltersProps {

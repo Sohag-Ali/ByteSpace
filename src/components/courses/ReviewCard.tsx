@@ -20,7 +20,10 @@ interface ReviewCardProps {
   index?: number;
 }
 
-export const ReviewCard: React.FC<ReviewCardProps> = ({ review, index = 0 }) => {
+export const ReviewCard: React.FC<ReviewCardProps> = ({
+  review,
+  index = 0,
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

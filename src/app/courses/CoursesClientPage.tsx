@@ -32,7 +32,7 @@ export default function CoursesClientPage() {
         (c) =>
           c.title.toLowerCase().includes(q) ||
           c.instructor.toLowerCase().includes(q) ||
-          c.category.toLowerCase().includes(q)
+          c.category.toLowerCase().includes(q),
       );
     }
 
@@ -59,7 +59,10 @@ export default function CoursesClientPage() {
     return result;
   }, [searchQuery, selectedCategory, selectedLevel, sortBy]);
 
-  const totalPages = Math.max(5, Math.ceil(filteredCourses.length / ITEMS_PER_PAGE));
+  const totalPages = Math.max(
+    5,
+    Math.ceil(filteredCourses.length / ITEMS_PER_PAGE),
+  );
 
   const paginatedCourses = useMemo(() => {
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -134,7 +137,8 @@ export default function CoursesClientPage() {
                   No courses found
                 </h3>
                 <p className="font-satoshi text-gray-500 mt-2 text-sm max-w-md mx-auto">
-                  Try searching for a different keyword or resetting your category filter.
+                  Try searching for a different keyword or resetting your
+                  category filter.
                 </p>
                 <motion.button
                   type="button"

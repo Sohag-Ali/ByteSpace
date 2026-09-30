@@ -8,7 +8,10 @@ interface CourseTabsProps {
   onTabChange: (tab: string) => void;
 }
 
-export const CourseTabs: React.FC<CourseTabsProps> = ({ activeTab, onTabChange }) => {
+export const CourseTabs: React.FC<CourseTabsProps> = ({
+  activeTab,
+  onTabChange,
+}) => {
   const tabs = ["About", "Lesson", "Reviews"];
 
   return (
