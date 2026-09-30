@@ -53,7 +53,7 @@ export const Navbar: React.FC = () => {
 
         {/* RIGHT: Sign In, Join Us & Shopping Bag Icon (Desktop) */}
         <div className="hidden lg:flex items-center gap-8 font-satoshi font-medium text-[16px] leading-[1.2] text-white tracking-normal">
-          <Link href="#" className="hover:text-white/80 transition-colors">
+          <Link href="/login" className="hover:text-white/80 transition-colors">
             Sign In
           </Link>
           <Link href="#" className="hover:text-white/80 transition-colors">
