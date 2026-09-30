@@ -46,4 +46,3 @@ export const LearningPaths: React.FC = () => {
 };
 
 export default LearningPaths;
-

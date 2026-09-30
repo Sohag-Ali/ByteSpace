@@ -126,10 +126,11 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-satoshi;
+    font-family: 'Satoshi', system-ui, -apple-system, sans-serif;
   }
-  button:not(:disabled), [role="button"]:not(:disabled) {
-    cursor: pointer;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
   }
   html {
     @apply font-sans;

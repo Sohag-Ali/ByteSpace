@@ -59,4 +59,3 @@ export const CourseSection: React.FC = () => {
 };
 
 export default CourseSection;
-
