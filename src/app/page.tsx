@@ -1,5 +1,10 @@
 import React from "react";
+import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
+
+export const metadata: Metadata = {
+  title: "ByteSpace | Home",
+};
 import {
   Hero,
   TrustedLogos,

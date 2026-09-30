@@ -43,7 +43,7 @@ export const Logo: React.FC<LogoProps> = ({ variant = "light", className = "" })
 
       {/* ByteSpace Text */}
       <span
-        className={`font-clash text-[22px] sm:text-[24px] leading-none tracking-normal translate-y-[8px] ${textColor}`}
+        className={`font-clash font-semibold text-[22px] sm:text-[24px] leading-none tracking-normal translate-y-[8px] ${textColor}`}
       >
         ByteSpace
       </span>
