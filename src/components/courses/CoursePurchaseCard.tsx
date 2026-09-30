@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { FolderDown, Video, Award, MessageSquare } from "lucide-react";
+import { motion } from "framer-motion";
 import { Course } from "@/data/courses";
 
 interface CoursePurchaseCardProps {
@@ -24,7 +25,12 @@ export const CoursePurchaseCard: React.FC<CoursePurchaseCardProps> = ({ course }
   ];
 
   return (
-    <div className="w-full bg-white rounded-[28px] border border-gray-200/90 p-6 sm:p-7 shadow-2xl flex flex-col gap-6 select-none">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="w-full bg-white rounded-[28px] border border-gray-200/90 p-6 sm:p-7 shadow-2xl flex flex-col gap-6 select-none"
+    >
       {/* 1. Lessons Header */}
       <div>
         <h3 className="font-poppins font-bold text-gray-900 text-lg sm:text-xl">
@@ -64,13 +70,15 @@ export const CoursePurchaseCard: React.FC<CoursePurchaseCardProps> = ({ course }
         </div>
 
         {/* Full-width Enroll Now Button */}
-        <button
+        <motion.button
           type="button"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
           onClick={() => alert(`Enrolling in ${course.title}...`)}
-          className="w-full bg-[#CBFC01] hover:bg-[#b8e800] text-gray-900 font-satoshi font-bold text-sm sm:text-base py-3.5 px-6 rounded-full shadow-md hover:shadow-lg transition-all transform active:scale-98 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#003BE2]"
+          className="w-full bg-[#CBFC01] hover:bg-[#b8e800] text-gray-900 font-satoshi font-bold text-sm sm:text-base py-3.5 px-6 rounded-full shadow-md hover:shadow-lg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#003BE2]"
         >
           Enroll Now
-        </button>
+        </motion.button>
       </div>
 
       {/* 3. This Course Includes */}
@@ -117,14 +125,16 @@ export const CoursePurchaseCard: React.FC<CoursePurchaseCardProps> = ({ course }
           Ready to Dive In? Enroll Now and Start Building Your Digital Future!
         </p>
 
-        <button
+        <motion.button
           type="button"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
           className="w-full border border-gray-200 text-gray-700 hover:text-gray-900 hover:bg-gray-50 font-satoshi font-semibold text-xs py-2.5 px-4 rounded-full transition-colors cursor-pointer text-center"
         >
           See Full Profile
-        </button>
+        </motion.button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

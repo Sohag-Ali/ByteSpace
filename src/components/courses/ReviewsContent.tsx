@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import RatingSummary from "./RatingSummary";
 import ReviewCard, { ReviewItem } from "./ReviewCard";
 
@@ -57,7 +58,13 @@ export const ReviewsContent: React.FC = () => {
   }, [selectedRating]);
 
   return (
-    <div className="space-y-6 font-satoshi animate-in fade-in duration-200 select-none">
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -15 }}
+      transition={{ duration: 0.3 }}
+      className="space-y-6 font-satoshi select-none"
+    >
       {/* 1. Review Introduction Header */}
       <div className="space-y-2">
         <h2 className="font-poppins font-bold text-gray-900 text-2xl sm:text-3xl">
@@ -84,38 +91,55 @@ export const ReviewsContent: React.FC = () => {
           {filterOptions.map((opt) => {
             const isActive = selectedRating === opt.value;
             return (
-              <button
+              <motion.button
                 key={String(opt.value)}
                 type="button"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
                 onClick={() => setSelectedRating(opt.value as number | "all")}
-                className={`px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-all cursor-pointer ${
+                className={`relative px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold transition-colors cursor-pointer focus-visible:outline-none ${
                   isActive
-                    ? "bg-[#CBFC01] text-gray-900 shadow-xs"
+                    ? "text-gray-900"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
-                {opt.label}
-              </button>
+                {isActive && (
+                  <motion.div
+                    layoutId="activeRatingFilter"
+                    className="absolute inset-0 bg-[#CBFC01] rounded-full shadow-xs -z-0"
+                    transition={{ type: "spring", stiffness: 500, damping: 35 }}
+                  />
+                )}
+                <span className="relative z-10">{opt.label}</span>
+              </motion.button>
             );
           })}
         </div>
 
         {/* 4. Vertical List of Review Cards */}
         <div className="flex flex-col gap-4 sm:gap-6 pt-2">
-          {filteredReviews.length > 0 ? (
-            filteredReviews.map((rev) => (
-              <ReviewCard key={rev.id} review={rev} />
-            ))
-          ) : (
-            <div className="p-8 text-center bg-gray-50 rounded-2xl border border-dashed border-gray-200">
-              <p className="font-satoshi text-gray-500 text-sm">
-                No reviews found for this rating.
-              </p>
-            </div>
-          )}
+          <AnimatePresence mode="popLayout">
+            {filteredReviews.length > 0 ? (
+              filteredReviews.map((rev, index) => (
+                <ReviewCard key={rev.id} review={rev} index={index} />
+              ))
+            ) : (
+              <motion.div
+                key="empty"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                className="p-8 text-center bg-gray-50 rounded-2xl border border-dashed border-gray-200"
+              >
+                <p className="font-satoshi text-gray-500 text-sm">
+                  No reviews found for this rating.
+                </p>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

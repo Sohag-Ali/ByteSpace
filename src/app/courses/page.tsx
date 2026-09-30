@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { motion, AnimatePresence } from "framer-motion";
 import { COURSES } from "@/data/courses";
 import {
   CoursesHero,
@@ -116,33 +117,50 @@ export default function CoursesPage() {
 
         {/* Course Card Grid Container */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          {paginatedCourses.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {paginatedCourses.map((course, index) => (
-                <CourseCard key={course.id} course={course} index={index} />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-20 bg-gray-50 rounded-3xl border border-dashed border-gray-200">
-              <h3 className="font-poppins font-bold text-xl text-gray-800">
-                No courses found
-              </h3>
-              <p className="font-satoshi text-gray-500 mt-2 text-sm max-w-md mx-auto">
-                Try searching for a different keyword or resetting your category filter.
-              </p>
-              <button
-                type="button"
-                onClick={() => {
-                  setSearchQuery("");
-                  setSelectedCategory("Featured");
-                  setSelectedLevel("All");
-                }}
-                className="mt-5 bg-[#003BE2] text-white font-satoshi font-semibold px-6 py-2.5 rounded-full hover:bg-blue-700 transition-colors"
+          <AnimatePresence mode="popLayout">
+            {paginatedCourses.length > 0 ? (
+              <motion.div
+                key={`${currentPage}-${selectedCategory}-${selectedLevel}-${sortBy}-${searchQuery}`}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.35 }}
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
               >
-                Reset Filters
-              </button>
-            </div>
-          )}
+                {paginatedCourses.map((course, index) => (
+                  <CourseCard key={course.id} course={course} index={index} />
+                ))}
+              </motion.div>
+            ) : (
+              <motion.div
+                key="empty-state"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                className="text-center py-20 bg-gray-50 rounded-3xl border border-dashed border-gray-200"
+              >
+                <h3 className="font-poppins font-bold text-xl text-gray-800">
+                  No courses found
+                </h3>
+                <p className="font-satoshi text-gray-500 mt-2 text-sm max-w-md mx-auto">
+                  Try searching for a different keyword or resetting your category filter.
+                </p>
+                <motion.button
+                  type="button"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => {
+                    setSearchQuery("");
+                    setSelectedCategory("Featured");
+                    setSelectedLevel("All");
+                  }}
+                  className="mt-5 bg-[#003BE2] text-white font-satoshi font-semibold px-6 py-2.5 rounded-full hover:bg-blue-700 transition-colors"
+                >
+                  Reset Filters
+                </motion.button>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           {/* Interactive Pagination Bar */}
           <CoursePagination

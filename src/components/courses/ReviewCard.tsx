@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Star } from "lucide-react";
+import { motion } from "framer-motion";
 
 export interface ReviewItem {
   id: string | number;
@@ -16,11 +17,19 @@ export interface ReviewItem {
 
 interface ReviewCardProps {
   review: ReviewItem;
+  index?: number;
 }
 
-export const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
+export const ReviewCard: React.FC<ReviewCardProps> = ({ review, index = 0 }) => {
   return (
-    <div className="w-full bg-white rounded-2xl sm:rounded-3xl border border-gray-200/90 p-5 sm:p-6 shadow-xs flex flex-col gap-3.5 select-none font-satoshi">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -15 }}
+      transition={{ duration: 0.4, delay: index * 0.08 }}
+      whileHover={{ y: -2 }}
+      className="w-full bg-white rounded-2xl sm:rounded-3xl border border-gray-200/90 p-5 sm:p-6 shadow-xs flex flex-col gap-3.5 select-none font-satoshi transition-shadow hover:shadow-md"
+    >
       {/* Top Row: Avatar, Name, Role & Date */}
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-center gap-3">
@@ -66,7 +75,7 @@ export const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
       <p className="font-satoshi text-gray-600 text-sm sm:text-[15px] leading-relaxed">
         {review.comment}
       </p>
-    </div>
+    </motion.div>
   );
 };
 
