@@ -8,7 +8,10 @@ export interface LogoProps {
   className?: string;
 }
 
-export const Logo: React.FC<LogoProps> = ({ variant = "light", className = "" }) => {
+export const Logo: React.FC<LogoProps> = ({
+  variant = "light",
+  className = "",
+}) => {
   const isLight = variant === "light";
   const textColor = isLight ? "text-white" : "text-gray-900";
 

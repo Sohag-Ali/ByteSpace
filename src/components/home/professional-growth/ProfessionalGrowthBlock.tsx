@@ -54,10 +54,9 @@ const StudentGrowthContent: React.FC = () => (
 
     <p className="text-gray-600 font-satoshi text-base sm:text-lg mt-5 leading-relaxed max-w-xl">
       Explore our curated selection of courses tailored to enhance your
-      capabilities and accelerate your career journey. Whether you are
-      looking to sharpen specific skills, gain industry expertise, or
-      embark on a new career path entirely, we have the resources you
-      need.
+      capabilities and accelerate your career journey. Whether you are looking
+      to sharpen specific skills, gain industry expertise, or embark on a new
+      career path entirely, we have the resources you need.
     </p>
 
     <div className="flex items-center gap-8 sm:gap-12 mt-8 md:mt-10 pt-4">
@@ -95,9 +94,7 @@ const MaleStudentVisual: React.FC = () => (
     className="relative w-full max-w-[340px] xs:max-w-[420px] sm:max-w-[540px] md:max-w-[580px] lg:max-w-[640px] h-[380px] xs:h-[440px] sm:h-[520px] md:h-[560px] lg:h-[600px] mx-auto lg:ml-auto select-none"
   >
     {/* Background Radial Glow */}
-    <div
-      className="absolute w-[260px] h-[260px] sm:w-[360px] sm:h-[360px] md:w-[420px] md:h-[420px] rounded-full blur-3xl opacity-80 pointer-events-none z-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-    />
+    <div className="absolute w-[260px] h-[260px] sm:w-[360px] sm:h-[360px] md:w-[420px] md:h-[420px] rounded-full blur-3xl opacity-80 pointer-events-none z-0 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" />
 
     {/* Decorative Lime Shape (Layered on Top) */}
     <div className="absolute top-0 sm:top-2 md:top-16 lg:top-26 right-0 sm:right-[-10px] lg:right-0 w-[100px] xs:w-[130px] sm:w-[170px] lg:w-[220px] z-40 pointer-events-none">
@@ -251,8 +248,8 @@ const CourseManagementContent: React.FC = () => (
     </h2>
 
     <p className="text-gray-600 font-satoshi text-base sm:text-lg mt-5 leading-relaxed max-w-lg">
-      ByteSpace supports individuals or entities in the creation,
-      publication, and administration of educational courses.
+      ByteSpace supports individuals or entities in the creation, publication,
+      and administration of educational courses.
     </p>
 
     <div className="space-y-4 mt-8">

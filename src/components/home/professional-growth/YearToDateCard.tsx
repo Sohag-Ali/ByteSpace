@@ -7,12 +7,14 @@ interface YearToDateCardProps {
   className?: string;
 }
 
-export const YearToDateCard: React.FC<YearToDateCardProps> = ({ className }) => {
+export const YearToDateCard: React.FC<YearToDateCardProps> = ({
+  className,
+}) => {
   return (
     <div
       className={cn(
         "bg-[#003BE2] text-white rounded-[20px] sm:rounded-[24px] p-4 sm:p-5 shadow-2xl border border-white/10 min-w-[190px] sm:min-w-[15px] flex flex-col justify-between select-none",
-        className
+        className,
       )}
     >
       <div>

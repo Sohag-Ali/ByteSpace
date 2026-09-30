@@ -51,8 +51,9 @@ export const LessonContent: React.FC = () => {
           Explore the Modules
         </h2>
         <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-          Immerse yourself in the course content as we break down each module into
-          comprehensive lessons, providing practical insights and hands-on experiences.
+          Immerse yourself in the course content as we break down each module
+          into comprehensive lessons, providing practical insights and hands-on
+          experiences.
         </p>
       </div>
 
@@ -78,9 +79,9 @@ export const LessonContent: React.FC = () => {
           Lesson Content
         </h3>
         <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-          Engage with each lesson through captivating video content, detailed textual
-          explanations, and interactive elements. Download resources, complete
-          assignments, and test your understanding with quizzes.
+          Engage with each lesson through captivating video content, detailed
+          textual explanations, and interactive elements. Download resources,
+          complete assignments, and test your understanding with quizzes.
         </p>
       </div>
 
@@ -90,8 +91,8 @@ export const LessonContent: React.FC = () => {
           Lesson Progress Tracking
         </h3>
         <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-          Witness your growth as you complete lessons, with an intuitive progress
-          tracking feature guiding you through your learning journey.
+          Witness your growth as you complete lessons, with an intuitive
+          progress tracking feature guiding you through your learning journey.
         </p>
 
         {/* 55% Progress Card */}

@@ -121,7 +121,6 @@ export const CreatorCourses: React.FC = () => {
     <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 select-none font-satoshi">
       {/* Filter Header Controls matching Courses page style */}
       <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 mb-8 sm:mb-10">
-        
         {/* Left Filter Buttons */}
         <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap">
           {/* Filter Button */}
@@ -139,7 +138,9 @@ export const CreatorCourses: React.FC = () => {
               type="button"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              onClick={() => setSelectedLevel(selectedLevel === "All" ? "Beginner" : "All")}
+              onClick={() =>
+                setSelectedLevel(selectedLevel === "All" ? "Beginner" : "All")
+              }
               className={`bg-white border border-gray-200 text-gray-700 font-satoshi font-semibold text-xs sm:text-sm px-4 py-2 sm:py-2.5 rounded-full flex items-center gap-2 shadow-2xs cursor-pointer transition-colors ${
                 selectedLevel !== "All" ? "border-[#003BE2] text-[#003BE2]" : ""
               }`}
@@ -155,9 +156,15 @@ export const CreatorCourses: React.FC = () => {
               type="button"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              onClick={() => setSelectedCategory(selectedCategory === "All" ? "UI/UX Design" : "All")}
+              onClick={() =>
+                setSelectedCategory(
+                  selectedCategory === "All" ? "UI/UX Design" : "All",
+                )
+              }
               className={`bg-white border border-gray-200 text-gray-700 font-satoshi font-semibold text-xs sm:text-sm px-4 py-2 sm:py-2.5 rounded-full flex items-center gap-2 shadow-2xs cursor-pointer transition-colors ${
-                selectedCategory !== "All" ? "border-[#003BE2] text-[#003BE2]" : ""
+                selectedCategory !== "All"
+                  ? "border-[#003BE2] text-[#003BE2]"
+                  : ""
               }`}
             >
               <Grid className="w-4 h-4 text-gray-500 stroke-[2]" />
@@ -172,7 +179,9 @@ export const CreatorCourses: React.FC = () => {
             type="button"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            onClick={() => setSortBy(sortBy === "relevant" ? "rating" : "relevant")}
+            onClick={() =>
+              setSortBy(sortBy === "relevant" ? "rating" : "relevant")
+            }
             className="bg-white border border-gray-200 text-gray-700 font-satoshi font-semibold text-xs sm:text-sm px-4 py-2 sm:py-2.5 rounded-full flex items-center gap-2 shadow-2xs cursor-pointer transition-colors"
           >
             <ArrowUpDown className="w-4 h-4 text-gray-500 stroke-[2]" />

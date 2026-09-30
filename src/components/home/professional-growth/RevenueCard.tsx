@@ -12,7 +12,7 @@ export const RevenueCard: React.FC<RevenueCardProps> = ({ className }) => {
     <div
       className={cn(
         "bg-[#003BE2] text-white rounded-[20px] sm:rounded-[24px] p-4 sm:p-5 shadow-2xl border border-white/10 min-w-[200px] sm:min-w-[300px] flex flex-col justify-between select-none",
-        className
+        className,
       )}
     >
       <div>

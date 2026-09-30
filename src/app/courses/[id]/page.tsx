@@ -6,7 +6,9 @@ interface CourseDetailsPageProps {
   params: Promise<{ id: string }>;
 }
 
-export async function generateMetadata({ params }: CourseDetailsPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: CourseDetailsPageProps): Promise<Metadata> {
   const { id } = await params;
   const course = COURSES.find((c) => c.id === id) || COURSES[0];
   return {
@@ -14,7 +16,9 @@ export async function generateMetadata({ params }: CourseDetailsPageProps): Prom
   };
 }
 
-export default async function CourseDetailsPage({ params }: CourseDetailsPageProps) {
+export default async function CourseDetailsPage({
+  params,
+}: CourseDetailsPageProps) {
   const { id } = await params;
   const course = COURSES.find((c) => c.id === id) || COURSES[0];
 
