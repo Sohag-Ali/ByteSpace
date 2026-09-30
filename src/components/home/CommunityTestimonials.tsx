@@ -42,9 +42,14 @@ const TESTIMONIALS: Testimonial[] = [
 export const CommunityTestimonials: React.FC = () => {
   return (
     <section className="relative w-full bg-white py-20 sm:py-24 md:py-28 overflow-hidden select-none">
-      {/* Soft Radial Background Glows matching visual reference */}
-      <div className="absolute top-[-50px] right-[5%] sm:right-[10%] w-[450px] sm:w-[600px] h-[450px] sm:h-[600px] bg-[#D4FB20]/30 rounded-full blur-[130px] pointer-events-none z-0" />
-      <div className="absolute bottom-[-50px] left-[2%] sm:left-[5%] w-[400px] sm:w-[500px] h-[400px] sm:h-[500px] bg-[#003BE2]/12 rounded-full blur-[130px] pointer-events-none z-0" />
+      {/* Single continuous background gradient layer covering the entire section */}
+      <div
+        className="absolute inset-0 pointer-events-none z-0"
+        style={{
+          background:
+            "radial-gradient(ellipse 70% 70% at 85% 25%, rgba(212, 251, 32, 0.65) 0%, rgba(212, 251, 32, 0.35) 35%, rgba(212, 251, 32, 0.12) 65%, transparent 100%), radial-gradient(ellipse 60% 60% at 50% 15%, rgba(212, 251, 32, 0.40) 0%, rgba(212, 251, 32, 0.15) 45%, transparent 90%), radial-gradient(ellipse 65% 65% at 0% 80%, rgba(185, 205, 255, 0.45) 0%, rgba(185, 205, 255, 0.20) 45%, transparent 90%), radial-gradient(ellipse 50% 50% at 0% 10%, rgba(215, 225, 255, 0.35) 0%, transparent 80%), #ffffff",
+        }}
+      />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* TOP SECTION: HEADING & DESCRIPTION 2-COLUMN LAYOUT */}
