@@ -56,7 +56,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course, index = 0 }) => 
         <div>
           {/* Title & Rating Row */}
           <div className="flex items-start justify-between gap-2">
-            <h3 className="font-satoshi font-bold text-gray-900 text-lg md:text-xl leading-snug line-clamp-1 flex-1 group-hover:text-[#003BE2] transition-colors">
+            <h3 className="font-poppins font-bold text-gray-900 text-lg md:text-xl leading-snug line-clamp-1 flex-1 group-hover:text-[#003BE2] transition-colors">
               {course.title}
             </h3>
             <div className="flex items-center gap-1 shrink-0 font-satoshi text-sm font-semibold text-gray-700 mt-0.5">

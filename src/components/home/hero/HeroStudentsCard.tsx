@@ -23,10 +23,10 @@ export const HeroStudentsCard: React.FC<HeroStudentsCardProps> = ({ className })
         className
       )}
     >
-      <h4 className="text-gray-900 font-bold text-xs md:text-sm leading-tight">
+      <h4 className="text-gray-900 font-satoshi  text-xs md:text-sm leading-tight">
         Happy Students
       </h4>
-      <div className="flex items-center gap-1 mt-0.5 text-[11px] md:text-xs text-gray-500">
+      <div className="flex font-satoshi items-center gap-1 mt-0.5 text-[11px] md:text-xs text-gray-500">
         <span className="font-semibold text-gray-700">4.5</span>
         <span>(240)</span>
         <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400 ml-0.5" />
