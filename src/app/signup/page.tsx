@@ -1,9 +1,11 @@
-"use client";
-
-import React from "react";
+import type { Metadata } from "next";
 import { AuthLayout } from "@/components/auth/AuthLayout";
 import { AuthVisualSection } from "@/components/auth/AuthVisualSection";
 import { RegistrationForm } from "@/components/auth/RegistrationForm";
+
+export const metadata: Metadata = {
+  title: "Join Us",
+};
 
 export default function SignupPage() {
   return (

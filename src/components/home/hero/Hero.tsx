@@ -8,7 +8,7 @@ import HeroVisual from "./HeroVisual";
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative w-full min-h-screen bg-[#003BE2] hero-grid-pattern flex flex-col justify-between">
+    <section className="relative w-full min-h-0 md:min-h-screen bg-[#003BE2] hero-grid-pattern flex flex-col justify-start md:justify-between pb-2 md:pb-0 overflow-hidden">
       {/* Decorative Layer (Independent Layer with Ambient Motion) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Left Lime Scribble */}
