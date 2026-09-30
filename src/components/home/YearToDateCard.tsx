@@ -11,25 +11,26 @@ export const YearToDateCard: React.FC<YearToDateCardProps> = ({ className }) => 
   return (
     <div
       className={cn(
-        "bg-[#003BE2] text-white rounded-xl md:rounded-2xl p-3.5 sm:p-4 shadow-xl border border-white/10 min-w-[160px] sm:min-w-[180px]",
+        "bg-[#003BE2] text-white rounded-[20px] sm:rounded-[24px] p-4 sm:p-5 shadow-2xl border border-white/10 min-w-[190px] sm:min-w-[15px] flex flex-col justify-between select-none",
         className
       )}
     >
-      <div className="flex items-center justify-between gap-2">
-        <span className="font-satoshi text-xs text-blue-100 font-medium">
+      <div>
+        <div className="font-satoshi text-sm sm:text-base font-semibold text-white tracking-tight">
           Year to Date
-        </span>
-        <span className="font-satoshi text-[10px] text-blue-200 bg-white/10 px-2 py-0.5 rounded-md">
+        </div>
+        <div className="font-satoshi text-xs text-blue-200 opacity-80 mt-0.5">
           2023
-        </span>
+        </div>
       </div>
 
-      <div className="flex items-center justify-between gap-2 mt-1.5">
-        <span className="font-satoshi font-bold text-lg sm:text-xl md:text-2xl tracking-tight">
-          $1,200.38
-        </span>
-        <span className="bg-[#D4FB20] text-gray-900 font-satoshi font-bold text-[11px] sm:text-xs px-2 py-0.5 rounded-full shrink-0">
-          +12%
+      <div className="font-poppins font-bold text-2xl sm:text-3xl text-white mt-3 tracking-tight">
+        $1,200.38
+      </div>
+
+      <div className="mt-3">
+        <span className="bg-[#CBFC01] text-gray-900 font-satoshi font-bold text-xs sm:text-sm px-3 py-1 rounded-full inline-block shadow-sm">
+          +12$
         </span>
       </div>
     </div>

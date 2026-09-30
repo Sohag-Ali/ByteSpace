@@ -11,26 +11,26 @@ export const RevenueCard: React.FC<RevenueCardProps> = ({ className }) => {
   return (
     <div
       className={cn(
-        "bg-[#003BE2] text-white rounded-xl md:rounded-2xl p-3.5 sm:p-4 shadow-xl border border-white/10 min-w-[170px] sm:min-w-[190px]",
+        "bg-[#003BE2] text-white rounded-[20px] sm:rounded-[24px] p-4 sm:p-5 shadow-2xl border border-white/10 min-w-[200px] sm:min-w-[300px] flex flex-col justify-between select-none",
         className
       )}
     >
-      <div className="flex items-center justify-between gap-2">
-        <span className="font-satoshi text-xs text-blue-100 font-medium">
+      <div>
+        <div className="font-satoshi text-sm sm:text-base font-semibold text-white tracking-tight">
           Total Revenue
-        </span>
-        <span className="font-satoshi text-[10px] text-blue-200 bg-white/10 px-2 py-0.5 rounded-md">
+        </div>
+        <div className="font-satoshi text-xs text-blue-200 opacity-80 mt-0.5">
           July 1-28
-        </span>
+        </div>
       </div>
 
-      <div className="font-satoshi font-bold text-lg sm:text-xl md:text-2xl mt-1 tracking-tight">
+      <div className="font-poppins font-bold text-2xl sm:text-3xl text-white mt-3 tracking-tight">
         $120.29
       </div>
 
       {/* Progress Bar */}
-      <div className="w-full bg-white/20 h-1.5 rounded-full overflow-hidden mt-3">
-        <div className="bg-[#D4FB20] h-full w-[72%] rounded-full" />
+      <div className="w-full bg-white/20 h-2 sm:h-2.5 rounded-full overflow-hidden mt-3">
+        <div className="bg-[#CBFC01] h-full w-[72%] rounded-full" />
       </div>
     </div>
   );
