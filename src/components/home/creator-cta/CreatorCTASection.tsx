@@ -46,8 +46,18 @@ export const CreatorCTASection: React.FC = () => {
           }}
           transition={{
             opacity: { duration: 0.6, delay: 0.1 },
-            scale: { duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.2 },
-            y: { duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.2 },
+            scale: {
+              duration: 4.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.2,
+            },
+            y: {
+              duration: 3.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.2,
+            },
           }}
           className="absolute left-[8%] xs:left-[12%] sm:left-[15%] md:left-[12%] top-[4%] sm:top-[4%] w-[45px] xs:w-[60px] sm:w-[90px] md:w-[110px] lg:w-[180px] pointer-events-none"
         >
@@ -96,8 +106,18 @@ export const CreatorCTASection: React.FC = () => {
           }}
           transition={{
             opacity: { duration: 0.6, delay: 0.3 },
-            y: { duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.1 },
-            rotate: { duration: 8, repeat: Infinity, ease: "easeInOut", delay: 0.1 },
+            y: {
+              duration: 5.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.1,
+            },
+            rotate: {
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.1,
+            },
           }}
           className="absolute left-[1%] sm:left-[4%] md:left-[1%] bottom-[-10px] sm:bottom-[-30px] md:bottom-[-155px] w-[90px] xs:w-[130px] sm:w-[200px] md:w-[260px] lg:w-[360px] pointer-events-none"
         >
@@ -125,8 +145,18 @@ export const CreatorCTASection: React.FC = () => {
           }}
           transition={{
             opacity: { duration: 0.6, delay: 0.15 },
-            y: { duration: 4.8, repeat: Infinity, ease: "easeInOut", delay: 0.3 },
-            rotate: { duration: 6.5, repeat: Infinity, ease: "easeInOut", delay: 0.3 },
+            y: {
+              duration: 4.8,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.3,
+            },
+            rotate: {
+              duration: 6.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.3,
+            },
           }}
           className="absolute right-[8%] xs:right-[12%] sm:right-[15%] md:right-[14%] top-[4%] sm:top-[8%] w-[45px] xs:w-[65px] sm:w-[100px] md:w-[130px] lg:w-[180px] pointer-events-none"
         >
@@ -155,7 +185,12 @@ export const CreatorCTASection: React.FC = () => {
           transition={{
             opacity: { duration: 0.6, delay: 0.2 },
             y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 },
-            scale: { duration: 6, repeat: Infinity, ease: "easeInOut", delay: 0.5 },
+            scale: {
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.5,
+            },
           }}
           className="absolute right-[-10px] sm:right-0 top-[-10px] sm:top-10 w-[75px] xs:w-[100px] sm:w-[160px] md:w-[210px] lg:w-[270px] pointer-events-none"
         >
@@ -182,8 +217,18 @@ export const CreatorCTASection: React.FC = () => {
           }}
           transition={{
             opacity: { duration: 0.6, delay: 0.35 },
-            y: { duration: 5.2, repeat: Infinity, ease: "easeInOut", delay: 0.2 },
-            rotate: { duration: 7.5, repeat: Infinity, ease: "easeInOut", delay: 0.2 },
+            y: {
+              duration: 5.2,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.2,
+            },
+            rotate: {
+              duration: 7.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.2,
+            },
           }}
           className="absolute right-[1%] sm:right-[3%] md:right-[4%] bottom-[-10px] sm:bottom-[-30px] md:bottom-[-140px] w-[85px] xs:w-[120px] sm:w-[180px] md:w-[230px] lg:w-[320px] rotate-[3deg] pointer-events-none"
         >
@@ -220,7 +265,11 @@ export const CreatorCTASection: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] as const }}
+          transition={{
+            duration: 0.7,
+            delay: 0.15,
+            ease: [0.22, 1, 0.36, 1] as const,
+          }}
           className="font-satoshi text-white/90 text-xs xs:text-sm sm:text-base md:text-[17px] leading-[1.65] max-w-3xl text-center mt-4 sm:mt-8 px-2"
         >
           Experience the collaboration of numerous creators and an expanding

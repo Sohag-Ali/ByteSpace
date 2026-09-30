@@ -53,7 +53,7 @@ export const CategoryFilters: React.FC<CategoryFiltersProps> = ({
               "relative px-4 sm:px-5 py-2 sm:py-2.5 rounded-full font-satoshi text-xs sm:text-sm transition-colors duration-200 cursor-pointer whitespace-nowrap",
               isActive
                 ? "bg-[#CBFC01] text-black font-bold shadow-sm"
-                : "bg-[#F3F4F6] text-gray-700 font-medium hover:bg-gray-200"
+                : "bg-[#F3F4F6] text-gray-700 font-medium hover:bg-gray-200",
             )}
           >
             {isActive && (

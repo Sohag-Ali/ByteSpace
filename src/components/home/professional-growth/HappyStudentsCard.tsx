@@ -9,7 +9,9 @@ interface HappyStudentsCardProps {
   className?: string;
 }
 
-export const HappyStudentsCard: React.FC<HappyStudentsCardProps> = ({ className }) => {
+export const HappyStudentsCard: React.FC<HappyStudentsCardProps> = ({
+  className,
+}) => {
   const avatars = [
     "/images/hero/avatar1.svg",
     "/images/hero/avatar2.svg",
@@ -21,7 +23,7 @@ export const HappyStudentsCard: React.FC<HappyStudentsCardProps> = ({ className 
     <div
       className={cn(
         "bg-white text-gray-900 rounded-[20px] sm:rounded-[24px] p-4 sm:p-5 shadow-2xl border border-gray-100/80 min-w-[220px] sm:min-w-[260px] flex flex-col gap-2.5 select-none",
-        className
+        className,
       )}
     >
       <h4 className="font-poppins font-bold text-base sm:text-lg text-gray-900 tracking-tight">

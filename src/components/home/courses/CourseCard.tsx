@@ -12,7 +12,10 @@ interface CourseCardProps {
   index?: number;
 }
 
-export const CourseCard: React.FC<CourseCardProps> = ({ course, index = 0 }) => {
+export const CourseCard: React.FC<CourseCardProps> = ({
+  course,
+  index = 0,
+}) => {
   return (
     <Link href={`/courses/${course.id}`} className="block h-full">
       <motion.div

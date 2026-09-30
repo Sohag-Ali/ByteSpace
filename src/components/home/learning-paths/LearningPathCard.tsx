@@ -2,7 +2,15 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Palette, Code2, Monitor, Briefcase, Megaphone, Camera, LucideIcon } from "lucide-react";
+import {
+  Palette,
+  Code2,
+  Monitor,
+  Briefcase,
+  Megaphone,
+  Camera,
+  LucideIcon,
+} from "lucide-react";
 import { LearningPath } from "@/data/learning-paths";
 
 interface LearningPathCardProps {
@@ -19,7 +27,10 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Camera,
 };
 
-export const LearningPathCard: React.FC<LearningPathCardProps> = ({ path, index = 0 }) => {
+export const LearningPathCard: React.FC<LearningPathCardProps> = ({
+  path,
+  index = 0,
+}) => {
   const IconComponent = ICON_MAP[path.icon] || Palette;
 
   return (

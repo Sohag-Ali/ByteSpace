@@ -14,7 +14,6 @@ export default function NotFoundClientView() {
 
         <div className="relative w-full bg-[#003BE2] hero-grid-pattern py-16 sm:py-24 lg:py-28 px-4 sm:px-6 lg:px-8 text-white text-center flex flex-col items-center justify-center select-none overflow-hidden min-h-[calc(100vh-280px)]">
           <div className="max-w-4xl mx-auto flex flex-col items-center justify-center relative z-10">
-            
             <motion.div
               initial={{ opacity: 0, scale: 0.8, y: 20 }}
               animate={{
@@ -71,7 +70,6 @@ export default function NotFoundClientView() {
                 </motion.button>
               </Link>
             </motion.div>
-
           </div>
         </div>
       </div>

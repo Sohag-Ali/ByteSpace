@@ -49,7 +49,11 @@ export function AuthVisualSection({
       opacity: 1,
       x: 0,
       y: 0,
-      transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const, delay: 0.3 },
+      transition: {
+        duration: 0.8,
+        ease: [0.22, 1, 0.36, 1] as const,
+        delay: 0.3,
+      },
     },
   };
 
@@ -60,7 +64,11 @@ export function AuthVisualSection({
       x: 0,
       y: 0,
       scale: 1,
-      transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] as const, delay: 0.4 },
+      transition: {
+        duration: 0.8,
+        ease: [0.22, 1, 0.36, 1] as const,
+        delay: 0.4,
+      },
     },
   };
 
@@ -82,7 +90,10 @@ export function AuthVisualSection({
       className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left text-white w-full mx-auto lg:mx-0"
     >
       {/* Top Left Logo Branding */}
-      <motion.div variants={itemFadeUp} className="w-full flex justify-center lg:justify-start">
+      <motion.div
+        variants={itemFadeUp}
+        className="w-full flex justify-center lg:justify-start"
+      >
         <Link href="/" className="flex items-center gap-3 group mb-6 lg:mb-8">
           <motion.svg
             width="36"
@@ -171,7 +182,12 @@ export function AuthVisualSection({
             opacity: { duration: 0.6, delay: 0.4 },
             scale: { duration: 0.6, delay: 0.4 },
             y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 },
-            rotate: { duration: 7, repeat: Infinity, ease: "easeInOut", delay: 0.5 },
+            rotate: {
+              duration: 7,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.5,
+            },
           }}
           className="absolute bottom-[-15px] sm:bottom-[15px] right-[-15px] sm:left-[320px] w-28 sm:w-44 z-50 pointer-events-none"
         >
@@ -196,8 +212,18 @@ export function AuthVisualSection({
           transition={{
             opacity: { duration: 0.6, delay: 0.5 },
             scale: { duration: 0.6, delay: 0.5 },
-            y: { duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.2 },
-            x: { duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 0.2 },
+            y: {
+              duration: 4.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.2,
+            },
+            x: {
+              duration: 5.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.2,
+            },
           }}
           className="absolute bottom-[60px] sm:bottom-[-35px] left-[-20px] sm:left-[5px] w-24 sm:w-42 z-30 pointer-events-none"
         >
@@ -239,7 +265,8 @@ export function AuthVisualSection({
           </p>
           <div className="flex items-center gap-2 sm:gap-3 mt-2 sm:mt-3 pt-2 sm:pt-3 border-t border-gray-100">
             <span className="bg-gray-100 text-gray-700 text-[10px] sm:text-xs font-satoshi font-semibold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full flex items-center gap-1">
-              <BarChart2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gray-500" /> Beginner
+              <BarChart2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gray-500" />{" "}
+              Beginner
             </span>
             <div className="flex items-center -space-x-2">
               {avatars.slice(0, 4).map((av, idx) => (
@@ -257,7 +284,10 @@ export function AuthVisualSection({
           </div>
           <div className="mt-2">
             <span className="font-poppins font-bold text-sm sm:text-base text-[#003BE2]">
-              $25<span className="text-xs font-normal text-gray-500">/lifetime</span>
+              $25
+              <span className="text-xs font-normal text-gray-500">
+                /lifetime
+              </span>
             </span>
           </div>
         </motion.div>
@@ -302,7 +332,8 @@ export function AuthVisualSection({
 
           <div className="flex items-center gap-2 sm:gap-3 mt-3 sm:mt-4 pt-2.5 sm:pt-3.5 border-t border-gray-100">
             <span className="bg-gray-100 text-gray-700 text-[10px] sm:text-xs font-satoshi font-semibold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full flex items-center gap-1">
-              <BarChart2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gray-500" /> Beginner
+              <BarChart2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-gray-500" />{" "}
+              Beginner
             </span>
             <div className="flex items-center -space-x-2">
               {avatars.slice(0, 4).map((av, idx) => (
@@ -320,7 +351,10 @@ export function AuthVisualSection({
           </div>
           <div className="mt-2">
             <span className="font-poppins font-bold text-base sm:text-lg text-[#003BE2]">
-              $25<span className="text-xs font-normal text-gray-500">/lifetime</span>
+              $25
+              <span className="text-xs font-normal text-gray-500">
+                /lifetime
+              </span>
             </span>
           </div>
         </motion.div>
@@ -333,7 +367,12 @@ export function AuthVisualSection({
             y: [0, -6, 0],
           }}
           transition={{
-            y: { duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.8 },
+            y: {
+              duration: 3.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 0.8,
+            },
           }}
           className="absolute bottom-[0px] right-[10px] sm:right-[40px] bg-[#CBFC01] text-gray-900 rounded-[20px] sm:rounded-[24px] p-3.5 sm:p-4.5 shadow-2xl border border-lime-300 min-w-[210px] sm:min-w-[270px] z-40 cursor-pointer text-left"
         >
@@ -343,7 +382,9 @@ export function AuthVisualSection({
             </h4>
             <div className="flex items-center gap-1 text-[11px] sm:text-xs font-bold text-gray-900">
               <span>4.5</span>
-              <span className="text-[10px] sm:text-xs font-normal text-gray-700">(240)</span>
+              <span className="text-[10px] sm:text-xs font-normal text-gray-700">
+                (240)
+              </span>
               <Star className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-[#003BE2] text-[#003BE2]" />
             </div>
           </div>
@@ -353,14 +394,16 @@ export function AuthVisualSection({
               "/images/testimonials/james.jpg",
               "/images/testimonials/alex.jpg",
               ...avatars,
-            ].slice(0, 7).map((av, idx) => (
-              <div
-                key={idx}
-                className="relative w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white overflow-hidden shrink-0 bg-gray-100"
-              >
-                <Image src={av} alt="student" fill className="object-cover" />
-              </div>
-            ))}
+            ]
+              .slice(0, 7)
+              .map((av, idx) => (
+                <div
+                  key={idx}
+                  className="relative w-6 h-6 sm:w-8 sm:h-8 rounded-full border-2 border-white overflow-hidden shrink-0 bg-gray-100"
+                >
+                  <Image src={av} alt="student" fill className="object-cover" />
+                </div>
+              ))}
             <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-black text-white text-[10px] sm:text-xs font-bold flex items-center justify-center border-2 border-white shrink-0 z-10">
               2K+
             </div>

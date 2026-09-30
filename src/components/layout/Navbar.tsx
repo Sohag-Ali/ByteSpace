@@ -35,10 +35,11 @@ export const Navbar: React.FC = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`py-1 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#CBFC01] rounded ${isActive
-                  ? "text-[#CBFC01]"
-                  : "text-white/90 hover:text-[#CBFC01]"
-                  }`}
+                className={`py-1 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#CBFC01] rounded ${
+                  isActive
+                    ? "text-[#CBFC01]"
+                    : "text-white/90 hover:text-[#CBFC01]"
+                }`}
               >
                 {link.name}
               </Link>
@@ -50,19 +51,21 @@ export const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center gap-5 lg:gap-8 font-satoshi font-medium text-[15px] lg:text-[16px] leading-[1.2] tracking-normal">
           <Link
             href="/login"
-            className={`transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#CBFC01] rounded ${pathname === "/login"
-              ? "text-[#CBFC01]"
-              : "text-white/90 hover:text-[#CBFC01]"
-              }`}
+            className={`transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#CBFC01] rounded ${
+              pathname === "/login"
+                ? "text-[#CBFC01]"
+                : "text-white/90 hover:text-[#CBFC01]"
+            }`}
           >
             Sign In
           </Link>
           <Link
             href="/register"
-            className={`transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#CBFC01] rounded ${pathname === "/register"
-              ? "text-[#CBFC01]"
-              : "text-white/90 hover:text-[#CBFC01]"
-              }`}
+            className={`transition-colors duration-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#CBFC01] rounded ${
+              pathname === "/register"
+                ? "text-[#CBFC01]"
+                : "text-white/90 hover:text-[#CBFC01]"
+            }`}
           >
             Join Us
           </Link>

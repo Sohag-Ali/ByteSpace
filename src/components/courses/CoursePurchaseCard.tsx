@@ -10,11 +10,25 @@ interface CoursePurchaseCardProps {
   course: Course;
 }
 
-export const CoursePurchaseCard: React.FC<CoursePurchaseCardProps> = ({ course }) => {
+export const CoursePurchaseCard: React.FC<CoursePurchaseCardProps> = ({
+  course,
+}) => {
   const sampleLessons = [
-    { number: "01", title: "Introduction to Digital Assets", duration: "12 mins" },
-    { number: "02", title: "Design Principles for Impacts", duration: "21 mins" },
-    { number: "03", title: "Advanced Techniques in Digital Creation", duration: "16 mins" },
+    {
+      number: "01",
+      title: "Introduction to Digital Assets",
+      duration: "12 mins",
+    },
+    {
+      number: "02",
+      title: "Design Principles for Impacts",
+      duration: "21 mins",
+    },
+    {
+      number: "03",
+      title: "Advanced Techniques in Digital Creation",
+      duration: "16 mins",
+    },
   ];
 
   const includesList = [
@@ -40,17 +54,26 @@ export const CoursePurchaseCard: React.FC<CoursePurchaseCardProps> = ({ course }
         {/* Lesson Rows */}
         <div className="flex flex-col gap-3.5 mt-4 font-satoshi text-xs sm:text-sm">
           {sampleLessons.map((item) => (
-            <div key={item.number} className="flex items-start justify-between gap-2">
+            <div
+              key={item.number}
+              className="flex items-start justify-between gap-2"
+            >
               <div className="flex items-start gap-2.5 flex-1 pr-2">
-                <span className="font-semibold text-gray-400 shrink-0">{item.number}</span>
-                <span className="font-medium text-gray-800 leading-tight">{item.title}</span>
+                <span className="font-semibold text-gray-400 shrink-0">
+                  {item.number}
+                </span>
+                <span className="font-medium text-gray-800 leading-tight">
+                  {item.title}
+                </span>
               </div>
               <span className="text-[#003BE2] font-medium text-xs shrink-0 mt-0.5">
                 {item.duration}
               </span>
             </div>
           ))}
-          <p className="text-gray-400 font-normal text-xs mt-1">99 more videos</p>
+          <p className="text-gray-400 font-normal text-xs mt-1">
+            99 more videos
+          </p>
         </div>
       </div>
 

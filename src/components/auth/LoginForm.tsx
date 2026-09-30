@@ -30,7 +30,11 @@ export function LoginForm() {
       opacity: 1,
       x: 0,
       scale: 1,
-      transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const, delay: 0.2 },
+      transition: {
+        duration: 0.7,
+        ease: [0.22, 1, 0.36, 1] as const,
+        delay: 0.2,
+      },
     },
   };
 
@@ -110,7 +114,9 @@ export function LoginForm() {
         {/* Divider */}
         <div className="mt-8 mb-6 flex items-center justify-center gap-4">
           <div className="flex-1 border-t border-gray-200" />
-          <span className="font-satoshi text-xs sm:text-sm text-gray-400">or</span>
+          <span className="font-satoshi text-xs sm:text-sm text-gray-400">
+            or
+          </span>
           <div className="flex-1 border-t border-gray-200" />
         </div>
 

@@ -45,7 +45,12 @@ const partnerLogos: PartnerLogo[] = [
 ];
 
 // Duplicate logos array for seamless infinite looping
-const marqueeLogos = [...partnerLogos, ...partnerLogos, ...partnerLogos, ...partnerLogos];
+const marqueeLogos = [
+  ...partnerLogos,
+  ...partnerLogos,
+  ...partnerLogos,
+  ...partnerLogos,
+];
 
 export const TrustedLogos: React.FC = () => {
   return (
