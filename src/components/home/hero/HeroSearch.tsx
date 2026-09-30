@@ -9,7 +9,10 @@ interface HeroSearchProps {
   onSearch?: (query: string) => void;
 }
 
-export const HeroSearch: React.FC<HeroSearchProps> = ({ className, onSearch }) => {
+export const HeroSearch: React.FC<HeroSearchProps> = ({
+  className,
+  onSearch,
+}) => {
   const [query, setQuery] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -24,7 +27,7 @@ export const HeroSearch: React.FC<HeroSearchProps> = ({ className, onSearch }) =
       onSubmit={handleSubmit}
       className={cn(
         "flex flex-row items-center justify-center gap-3 w-full max-w-[600px] mx-auto px-4",
-        className
+        className,
       )}
     >
       {/* Search Input Box */}

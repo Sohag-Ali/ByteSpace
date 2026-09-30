@@ -32,9 +32,9 @@ export const TestimonialHeader: React.FC = () => {
         <p className="font-satoshi text-gray-600 text-base sm:text-[17px] leading-relaxed max-w-xl">
           At ByteSpace, our vibrant community of learners and creators is at the
           heart of what we do. Hear directly from those who have experienced the
-          transformative journey of learning and creating on our platform. Explore
-          testimonials that reflect the diverse perspectives of enthusiastic learners
-          and accomplished creators.
+          transformative journey of learning and creating on our platform.
+          Explore testimonials that reflect the diverse perspectives of
+          enthusiastic learners and accomplished creators.
         </p>
       </motion.div>
     </div>

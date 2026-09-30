@@ -31,7 +31,11 @@ export function RegistrationForm() {
       opacity: 1,
       x: 0,
       scale: 1,
-      transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const, delay: 0.2 },
+      transition: {
+        duration: 0.7,
+        ease: [0.22, 1, 0.36, 1] as const,
+        delay: 0.2,
+      },
     },
   };
 

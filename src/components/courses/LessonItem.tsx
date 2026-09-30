@@ -8,7 +8,10 @@ interface LessonItemProps {
   description: string;
 }
 
-export const LessonItem: React.FC<LessonItemProps> = ({ title, description }) => {
+export const LessonItem: React.FC<LessonItemProps> = ({
+  title,
+  description,
+}) => {
   return (
     <div className="flex items-start gap-3.5 sm:gap-4 font-satoshi py-1.5">
       {/* Lime Green Rounded Square Icon Container */}

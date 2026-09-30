@@ -71,7 +71,10 @@ export const ReviewsContent: React.FC = () => {
           What Learners Are Saying
         </h2>
         <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-          Discover what our learners have to say about their experience with &apos;Build Digital Assets: A Comprehensive Guide.&apos; Read reviews and ratings from individuals who have embarked on the transformative journey of mastering digital asset creation.
+          Discover what our learners have to say about their experience with
+          &apos;Build Digital Assets: A Comprehensive Guide.&apos; Read reviews
+          and ratings from individuals who have embarked on the transformative
+          journey of mastering digital asset creation.
         </p>
       </div>
 

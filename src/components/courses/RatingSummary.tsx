@@ -60,7 +60,11 @@ export const RatingSummary: React.FC<RatingSummaryProps> = ({
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: `${item.percentage}%` }}
-                  transition={{ duration: 0.8, delay: 0.2 + idx * 0.1, ease: "easeOut" }}
+                  transition={{
+                    duration: 0.8,
+                    delay: 0.2 + idx * 0.1,
+                    ease: "easeOut",
+                  }}
                   className="bg-[#CBFC01] h-full rounded-full"
                 />
               </div>

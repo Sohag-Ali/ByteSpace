@@ -28,10 +28,10 @@ export const LearningPaths: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
           className="text-gray-600 font-satoshi font-normal text-sm sm:text-base md:text-lg max-w-3xl mx-auto text-center mt-4 leading-relaxed px-2"
         >
-          At Bytespace, we believe in empowering individuals through knowledge. Our
-          diverse range of courses spans various fields, ensuring there&apos;s
-          something for everyone. Unleash your potential and explore our carefully
-          curated categories.
+          At Bytespace, we believe in empowering individuals through knowledge.
+          Our diverse range of courses spans various fields, ensuring
+          there&apos;s something for everyone. Unleash your potential and
+          explore our carefully curated categories.
         </motion.p>
 
         {/* 6 Category Cards Grid */}

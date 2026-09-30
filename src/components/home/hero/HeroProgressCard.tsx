@@ -5,12 +5,14 @@ interface HeroProgressCardProps {
   className?: string;
 }
 
-export const HeroProgressCard: React.FC<HeroProgressCardProps> = ({ className }) => {
+export const HeroProgressCard: React.FC<HeroProgressCardProps> = ({
+  className,
+}) => {
   return (
     <div
       className={cn(
         "bg-white font-satoshi rounded-2xl md:rounded-[18px] p-4 md:px-5 md:py-4 shadow-xl md:shadow-2xl flex flex-col border border-gray-100/50 backdrop-blur-sm min-w-[190px] md:min-w-[220px]",
-        className
+        className,
       )}
     >
       <span className="text-gray-900 font-medium text-[11px] md:text-xs">

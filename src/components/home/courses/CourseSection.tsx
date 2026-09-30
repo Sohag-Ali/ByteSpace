@@ -40,8 +40,8 @@ export const CourseSection: React.FC = () => {
           className="text-gray-600 font-satoshi font-normal text-sm sm:text-base md:text-lg max-w-3xl mx-auto text-center mt-4 leading-relaxed px-2"
         >
           At Bytespace Courses, we bring you closer to life-changing knowledge.
-          Explore a variety of courses across different fields, from technology to
-          the arts, and make a difference in your career and life.
+          Explore a variety of courses across different fields, from technology
+          to the arts, and make a difference in your career and life.
         </motion.p>
 
         {/* 3. Category Filter Pills */}
