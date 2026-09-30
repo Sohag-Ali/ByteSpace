@@ -34,7 +34,7 @@ const FOOTER_COLUMNS: FooterLink[][] = [
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-white text-gray-900 border-t border-gray-100 select-none">
+    <footer className="w-full bg-white text-gray-900 border-t border-gray-300 select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10 sm:pb-12">
         {/* MAIN CONTENT GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
@@ -118,7 +118,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* THIN HORIZONTAL DIVIDER */}
-        <div className="border-t border-gray-200/80 mt-12 sm:mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-satoshi text-xs sm:text-sm text-gray-500">
+        <div className="border-t border-gray-300/80 mt-12 sm:mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-satoshi text-xs sm:text-sm text-gray-500">
           {/* Left Copyright */}
           <p>© 2023 ByteSpace. All rights reserved.</p>
 
