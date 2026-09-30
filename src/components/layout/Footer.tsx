@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { Logo } from "@/components/common";
 
 interface FooterLink {
   label: string;
@@ -41,32 +42,7 @@ export const Footer: React.FC = () => {
           {/* LEFT: LOGO, NEWSLETTER & PRIVACY TEXT */}
           <div className="lg:col-span-6 flex flex-col items-start">
             {/* ByteSpace Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <svg
-                width="29"
-                height="32"
-                viewBox="0 0 29 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="shrink-0"
-              >
-                <path
-                  d="M10.5 10.5C10.5 4.70101 5.79899 0 0 0V21C0 26.799 4.70101 31.5 10.5 31.5V10.5Z"
-                  fill="#D4FB20"
-                />
-                <path
-                  d="M18.375 10.5C24.174 10.5 28.875 15.201 28.875 21H21C15.201 21 10.5 16.299 10.5 10.5L18.375 10.5Z"
-                  fill="#D4FB20"
-                />
-                <path
-                  d="M18.375 31.5C24.174 31.5 28.875 26.799 28.875 21H21C21 25.701 10.5 31.5 18.375 31.5L18.375 31.5Z"
-                  fill="#D4FB20"
-                />
-              </svg>
-              <span className="font-clash font-bold text-[24px] leading-none text-gray-900 tracking-normal">
-                ByteSpace
-              </span>
-            </Link>
+            <Logo variant="dark" />
 
             {/* Newsletter Prompt */}
             <p className="font-satoshi text-gray-600 text-sm sm:text-base mt-4 mb-6 max-w-md leading-relaxed">
