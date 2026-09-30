@@ -41,7 +41,7 @@ export const LearningPathCard: React.FC<LearningPathCardProps> = ({ path, index 
       </motion.div>
 
       {/* Category Name */}
-      <h3 className="font-satoshi font-semibold text-gray-900 text-sm sm:text-base tracking-tight leading-snug truncate w-full group-hover:text-[#003BE2] transition-colors">
+      <h3 className="font-poppins font-semibold text-gray-900 text-sm sm:text-base tracking-tight leading-snug truncate w-full group-hover:text-[#003BE2] transition-colors">
         {path.title}
       </h3>
     </motion.div>
