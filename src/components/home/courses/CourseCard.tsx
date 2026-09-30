@@ -121,4 +121,3 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course, index = 0 }) => 
 };
 
 export default CourseCard;
-

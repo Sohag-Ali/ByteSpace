@@ -38,4 +38,3 @@ export const CourseGrid: React.FC<CourseGridProps> = ({ courses }) => {
 };
 
 export default CourseGrid;
-

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
 import GrowthCourseCard from "./GrowthCourseCard";
-import HeroProgressCard from "./HeroProgressCard";
+import HeroProgressCard from "../hero/HeroProgressCard";
 import RevenueCard from "./RevenueCard";
 import YearToDateCard from "./YearToDateCard";
 import HappyStudentsCard from "./HappyStudentsCard";

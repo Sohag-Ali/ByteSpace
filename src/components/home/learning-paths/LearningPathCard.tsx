@@ -49,4 +49,3 @@ export const LearningPathCard: React.FC<LearningPathCardProps> = ({ path, index 
 };
 
 export default LearningPathCard;
-
