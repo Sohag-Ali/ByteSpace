@@ -56,7 +56,7 @@ export const Navbar: React.FC = () => {
           <Link href="/login" className="hover:text-white/80 transition-colors">
             Sign In
           </Link>
-          <Link href="#" className="hover:text-white/80 transition-colors">
+          <Link href="/signup" className="hover:text-white/80 transition-colors">
             Join Us
           </Link>
           <button

@@ -58,7 +58,7 @@ export const MobileMenu: React.FC = () => {
             Sign In
           </Link>
           <Link
-            href="#"
+            href="/signup"
             onClick={() => setIsOpen(false)}
             className="hover:text-white/80 py-1"
           >
