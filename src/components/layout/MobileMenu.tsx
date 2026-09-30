@@ -34,7 +34,7 @@ export const MobileMenu: React.FC = () => {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Courses", href: "#courses" },
+    { name: "Courses", href: "/courses" },
     { name: "Creators", href: "#creators" },
   ];
 
